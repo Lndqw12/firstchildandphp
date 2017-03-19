@@ -41,6 +41,12 @@ div p:first-child {
 tr {
 	border:2px solid black;
 }*/
+tr:nth-child(even) {
+		background: #D2FFFF;
+		}
+tr:nth-child(odd) {
+		background: #A5D4FF;
+		}
 
 html {
 	height: 100%; /* Высота веб-страницы */

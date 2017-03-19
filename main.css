@@ -47,7 +47,14 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
 		background: #A5D4FF;
 		}
-
+tr:nth-child(3) {
+		background: #05D4FF;
+		}
+tr:nth-child(3):hover {
+		background: #05D4FF;
+		color:red;
+		transition:0.6s;
+		}
 html {
 	height: 100%; /* Высота веб-страницы */
 	width: 100%; /* ширина веб-страницы */
@@ -57,7 +64,7 @@ html {
 	font-family:Lobster;
    }
    
-<div id="slideshow">
+/*<div id="slideshow">
 <img id="one" src="flower-1.jpg">
 <img id="two" src="flower-2.jpg">
 <nav>
@@ -81,7 +88,7 @@ html {
   <a href="#one" class="current"></a>
   <a href="#two"></a>
 </nav>
-</div>
+</div>*/
 
 CSS
 #slideshow img {transform: scale(0);}

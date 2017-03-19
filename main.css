@@ -1,0 +1,87 @@
+/*@media screen and (min-width: 25em) {
+body { 
+	background: #5f5ff0; 
+}
+div p:only-child {
+	background-color:gray;
+	width:45em;
+	-margin:0 auto;
+}
+div p:only-child {
+	background-color:gray;
+	width:5em;
+	height:5em;
+    color: red;
+	font-family:Lobster;
+}
+}
+b:only-child{
+  background:#778899;
+  color:white;
+  font-family:Lobster;
+}
+@media screen and (max-width: 960px) {
+body { 
+	background: #5f0ff0;
+	width:7em;
+	height:7em;
+}
+@media screen and (min-width: 2em) {
+div p:only-child {
+	width:3em;
+	height:3em;
+}
+}
+div:first-child {
+	background: lightgreen;
+	}
+div p:first-child {
+	background: lightgreen;
+	}
+tr {
+	border:2px solid black;
+}*/
+
+html {
+	height: 100%; /* Высота веб-страницы */
+	width: 100%; /* ширина веб-страницы */
+	background: #000 url(1.gif) no-repeat ; /* Путь к графическому файлу с фоном */
+	color: #fff; /* Белый цвет текста */
+	background-size:100% 100%;
+	font-family:Lobster;
+   }
+   
+<div id="slideshow">
+<img id="one" src="flower-1.jpg">
+<img id="two" src="flower-2.jpg">
+<nav>
+  <a href="#one" class="current"></a>
+  <a href="#two"></a>
+</nav>
+</div>
+1
+2
+3
+4
+5
+6
+7
+8
+	
+<div id="slideshow">
+<img id="one" src="flower-1.jpg">
+<img id="two" src="flower-2.jpg">
+<nav>
+  <a href="#one" class="current"></a>
+  <a href="#two"></a>
+</nav>
+</div>
+
+CSS
+#slideshow img {transform: scale(0);}
+#slideshow img:target {transform: scale(1);}
+1
+2
+	
+#slideshow img {transform: scale(0);}
+#slideshow img:target {transform: scale(1);}

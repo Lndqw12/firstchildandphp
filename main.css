@@ -47,7 +47,7 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
 		background: #A5D4FF;
 		}
-tr:nth-child(3) {
+tr:nth-child(2) {
 		background: #05D4FF;
 		}
 tr:nth-child(3):hover {
@@ -55,11 +55,15 @@ tr:nth-child(3):hover {
 		color:red;
 		transition:0.6s;
 		}
+tr:nth-child(odd) {
+		color: green;
+		}
 html {
 	height: 100%; /* Высота веб-страницы */
 	width: 100%; /* ширина веб-страницы */
-	background: #000 url(1.gif) no-repeat ; /* Путь к графическому файлу с фоном */
-	color: #fff; /* Белый цвет текста */
+	/*background: #fff url(1.gif) no-repeat ;  Путь к графическому файлу с фоном */
+	background-color:white;
+	color: red; /* Белый цвет текста */
 	background-size:100% 100%;
 	font-family:Lobster;
    }

@@ -8,8 +8,9 @@
 	<?php include("include/main.php"); ?> <!-- подкл пчп файла -->
 	<body style="
 	width:100%;
-	height:650px;
-	background:url(include/<?php echo $img;?>.jpg);"><style>@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Lobster');</style>
+	height:100%;
+	overflow:hidden;
+	background:url(include/<?php echo $img;?>.jpg); background-size: cover";><style>@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Lobster');</style>
 		<h1><p style="font-family:calibri;">&laquo;<?php echo $h;?>&nbsp;clock&raquo;</p></h1> <!-- переменная времени -->
 		<table style="text-transform:uppercase;">
 			<tr>

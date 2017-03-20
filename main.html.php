@@ -5,21 +5,12 @@
 		<meta charset="utf-8" />
 		<link href="main.css" rel="stylesheet" />
 	</head>
-	<?php include("include/main.php"); ?>
+	<?php include("include/main.php"); ?> <!-- подкл пчп файла -->
 	<body style="
-	width:100%; 
-	height:650px; 
+	width:100%;
+	height:650px;
 	background:url(include/<?php echo $img;?>.jpg);"><style>@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Lobster');</style>
-		<!--div>
-			<p>This paragraph <b>is</b> the only child of its parent</p>
-		</div>
-		<div>
-			<p>This <b>paragraph</b> is the first child of its parent</p>
-			<p>This paragraph is the <b>second</b> child of its parent</p>
-		</div>
-		<div>
-			<p>This <b>paragraph</b> is the first child of its parent</p>
-		</div-->
+		<h1><p style="font-family:calibri;">&laquo;<?php echo $h;?>&nbsp;clock&raquo;</p></h1> <!-- переменная времени -->
 		<table style="text-transform:uppercase;">
 			<tr>
 				<th>Company</th><th>Q1</th><th>Q2</th>

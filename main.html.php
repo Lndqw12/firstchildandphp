@@ -5,7 +5,11 @@
 		<meta charset="utf-8" />
 		<link href="main.css" rel="stylesheet" />
 	</head>
-	<body><style>@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Lobster');</style>
+	<?php include("include/main.php"); ?>
+	<body style="
+	width:100%; 
+	height:650px; 
+	background:url(include/<?php echo $img;?>.jpg);"><style>@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Lobster');</style>
 		<!--div>
 			<p>This paragraph <b>is</b> the only child of its parent</p>
 		</div>
@@ -39,6 +43,5 @@
 				<td>Html</td><td>Q</td><td>W</td>
 			</tr>
 		</table>
-		<?php require_once("./include/main.php"); ?>
 	</body>
 </html>

@@ -59,12 +59,12 @@ tr:nth-child(odd) {
 		color: green;
 		}
 html {
-	height: 100%; /* Высота веб-страницы */
-	width: 100%; /* ширина веб-страницы */
+	-height: 100%; /* Высота веб-страницы */
+	-width: 100%; /* ширина веб-страницы */
 	/*background: #fff url(1.gif) no-repeat ;  Путь к графическому файлу с фоном */
 	background-color:white;
 	color: red; /* Белый цвет текста */
-	background-size:100% 100%;
+	-background-size:100% 100%;
 	font-family:Lobster;
    }
    

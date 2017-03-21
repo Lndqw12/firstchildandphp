@@ -5,7 +5,8 @@
 		<meta charset="utf-8" />
 		<link href="main.css" rel="stylesheet" />
 	</head>
-	<?php include("include/main.php"); ?> <!-- подкл пчп файла -->
+	<?php include "include/main.php"; ?> <!-- подкл пчп файла -->
+	<!--?php include "main.php"; ?-->
 	<body style="
 	width:100%;
 	height:100%;
@@ -35,5 +36,6 @@
 				<td>Html</td><td>Q</td><td>W</td>
 			</tr>
 		</table>
+	<? echo "$h $hs $i $is"; ?>
 	</body>
 </html>

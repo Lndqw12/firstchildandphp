@@ -9,9 +9,9 @@
 	<!--?php include "main.php"; ?-->
 	<body style="
 	width:100%;
-	height:100%;
-	overflow:hidden;
-	background:url(include/<?php echo $img;?>.jpg); background-size: cover";><style>@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Lobster');</style>
+	height:768px;
+	-overflow:hidden;
+	background:url(include/<?php echo $img;?>.jpg); -background-size: cover";><style>@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Lobster');</style>
 		<h1><p style="font-family:calibri;">&laquo;<?php echo $h;?>&nbsp;clock&raquo;</p></h1> <!-- переменная времени -->
 		<table style="text-transform:uppercase;">
 			<tr>
@@ -36,6 +36,11 @@
 				<td>Html</td><td>Q</td><td>W</td>
 			</tr>
 		</table>
-	<? echo "$h $hs $i $is"; ?>
+	<?php echo "$h $hs $i $is"; ?>
+	<?php include "indexform.php"; ?>
+		<form method="post">
+			<input type="text" name="bucks" size="5"/>&laquo;$&laquo
+			<input type="submit" value="=" /> руб.
+		</form>
 	</body>
 </html>

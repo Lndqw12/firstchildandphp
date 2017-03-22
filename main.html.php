@@ -40,7 +40,7 @@
 	<?php include "indexform.php"; ?>
 		<form method="post">
 			<input type="text" name="bucks" size="5"/>&laquo;$&laquo
-			<input type="submit" value="=" /> руб.
+			<input type="submit" value="=" /><?php echo $rate * $bucks; ?> руб.
 		</form>
 	</body>
 </html>

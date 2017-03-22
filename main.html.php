@@ -11,7 +11,7 @@
 	width:100%;
 	height:768px;
 	-overflow:hidden;
-	background:url(include/<?php echo $img;?>.jpg); -background-size: cover";><style>@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Lobster');</style>
+	background:url(include/<?php echo $img;?>.jpg); background-size: cover";><style>@import url('https://fonts.googleapis.com/css?family=Droid+Serif|Lobster');</style>
 		<h1><p style="font-family:calibri;">&laquo;<?php echo $h;?>&nbsp;clock&raquo;</p></h1> <!-- переменная времени -->
 		<table style="text-transform:uppercase;">
 			<tr>
@@ -39,8 +39,13 @@
 	<?php echo "$h $hs $i $is"; ?>
 	<?php include "indexform.php"; ?>
 		<form method="post">
-			<input type="text" name="bucks" size="5"/>&laquo;$&laquo
+			<input type="text" name="bucks" value="<?php echo $bucks; ?>" size="5"/>&laquo;$&raquo;
 			<input type="submit" value="=" /><?php echo $rate * $bucks; ?> руб.
+			<input type="reset" value="del" />
+				<br><?php include "indexformtwo.php"; ?>
+			<input type="text" name="evro" value="<?php echo $evro; ?>" size="5"/>&laquo;€&raquo;
+			<input type="submit" value="=" /><?php echo $rate * $evro; ?> руб.
+			<input type="reset" value="del" />
 		</form>
 	</body>
 </html>

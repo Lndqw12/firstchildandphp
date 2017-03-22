@@ -1,7 +1,7 @@
 <?php
-	if($_GET['key'] != '1287975')
+	if($_GET['key'] != '1287975') // ?php-пи запрос на вход в - "secret.php"
 	{
-		header('location: main.html.php;');
+		header('location: main.html.php'); // переброс с "secret.php" в "main.html.php"
 		exit();
 	}
 ?>
